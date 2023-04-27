@@ -8,7 +8,7 @@ in the HTML doc as type=module to be able to use import/export.
 */
 import pizza from './pizza.png';
 //now lets see if importing of the image worked.
-function pageLoad(){
+export function pageLoad(){
 let div1 = document.getElementById('content');
 
 let header1 = document.createElement('h1');    
