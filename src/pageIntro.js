@@ -16,10 +16,9 @@ let header1 = document.createElement('h1');
 header1.textContent='Greatest Napolitan pizza, this side of the naples!';
 
 let image1 = document.createElement('img');
-image1.setAttribute('src','pizza');
+image1.setAttribute('src','pizza'); //lets see if this even works.
 image1.setAttribute('width','10vw');
 image1.setAttribute('height','10vh');
 div1.append(image1,header1);
-//We're here. Export this function, then import inside 
-//index.js and call it.
+
 }

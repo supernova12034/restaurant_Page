@@ -7,10 +7,20 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  //this lets you load image files in your 
-  //js code.
-  module:{
-      test: /\.(png|svg|jpg|jpeg|gif)$/i,
-      type: 'asset/resource',
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+
+     {
+
+       test: /\.(png|svg|jpg|jpeg|gif)$/i,
+
+       type: 'asset/resource',
+
+     },
+    ],
   },
 };
