@@ -1,8 +1,11 @@
 //We're here, solved an earlier problem with webpack,
-//but now we're getting a weird browser CORS error?
+//solved another problem with CORS error(by opening a
+//local web server) but now for some reason, 
+//when I try to use the imported module,
+//it throws a weird error?
 
-import {pageLoad} from './pageIntro';
+// import {pageLoad} from './pageIntro';
 
-pageLoad();
+// pageLoad();
 
 console.log("testing restaurant page");
