@@ -4,9 +4,9 @@
 //when I try to use the imported module,
 //it throws a weird error?
 
-// import {pageLoad} from './pageIntro';
+import {pageLoad} from './pageIntro';
 
-// pageLoad();
+pageLoad();
 
 console.log("testing restaurant page");
 console.log('testing testing');
