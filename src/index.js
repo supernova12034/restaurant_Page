@@ -9,3 +9,4 @@
 // pageLoad();
 
 console.log("testing restaurant page");
+console.log('testing testing');
