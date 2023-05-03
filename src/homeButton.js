@@ -8,13 +8,18 @@ tab 3)Contact
 Create a seperate module for each 'tab' and export and import
 them all into index.js
 
-We're here.
+We're here. Just creating the actual content for the 'tabs'.
 */
 
-function createHomeButton(){
+export function createHomeButton(){
     let homeDiv= document.createElement('div');
+    let intro = document.createElement('div');
+    let hours = document.createElement('div');
+    let location = document.createElement('div');
+
     let homeBtn = document.createElement('button');
    
+    
 
 
 }
