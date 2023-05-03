@@ -18,8 +18,8 @@ export function createHomeButton(){
     let location = document.createElement('div');
 
     let homeBtn = document.createElement('button');
-   
+    homeBtn.textContent = 'Home';
     
-
+    homeDiv.append(homeBtn);     
 
 }

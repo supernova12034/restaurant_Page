@@ -5,8 +5,10 @@
 //it throws a weird error?
 
 import {pageLoad} from './pageIntro';
+import {createHomeButton} from './homeButton';
 
 pageLoad();
+createHomeButton();
 
 console.log("testing restaurant page");
 console.log('testing testing');
