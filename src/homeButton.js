@@ -22,4 +22,5 @@ export function createHomeButton(){
     
     homeDiv.append(homeBtn);     
 
+    console.log('homeButton.js');
 }

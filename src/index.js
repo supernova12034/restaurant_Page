@@ -10,5 +10,4 @@ import {createHomeButton} from './homeButton';
 pageLoad();
 createHomeButton();
 
-console.log("testing restaurant page");
-console.log('testing testing');
+console.log("index.js");
