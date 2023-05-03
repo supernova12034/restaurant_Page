@@ -21,6 +21,6 @@ export function createHomeButton(){
     homeBtn.textContent = 'Home';
     
     homeDiv.append(homeBtn);     
-
+    document.body.append(homeDiv);//it worked!
     console.log('homeButton.js');
 }
