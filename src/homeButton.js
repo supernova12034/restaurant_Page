@@ -19,6 +19,11 @@ export function createHomeButton(){
 
     let homeBtn = document.createElement('button');
     homeBtn.textContent = 'Home';
+
+    intro.textContent = 'At Bobby\'s pizza we use authentic recipes';
+    //We're here, creating content for our tabs,
+    //trying to write an intro but going to the next
+    //line keeps exiting the string.
     
     homeDiv.append(homeBtn);     
     document.body.append(homeDiv);//it worked!
