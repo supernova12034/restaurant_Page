@@ -8,11 +8,15 @@ tab 3)Contact
 Create a seperate module for each 'tab' and export and import
 them all into index.js
 
-We're here. Just creating the actual content for the 'tabs'.
+ Just creating the actual content for the 'tabs'.
 */
 
 export function createHomeButton(){
     let homeDiv= document.createElement('div');
+    //We're here, figuring out how to assign a class
+    //or ID to our elements via javascript so we can
+    //perhaps style them.
+
     let intro = document.createElement('div');
     let intro2 = document.createElement('div');
     let intro3 = document.createElement('div');
@@ -64,7 +68,7 @@ export function createHomeButton(){
     location.append(lineBreak);
     location4.textContent = 'London, UK.';
     location.append(location4);
-    //We're here, creating content for our tabs,
+    //creating content for our tabs,
     //tweak the styling etc.
 
     //-Apparently textContent cant be split up into
