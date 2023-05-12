@@ -14,6 +14,8 @@ We're here. Just creating the actual content for the 'tabs'.
 export function createHomeButton(){
     let homeDiv= document.createElement('div');
     let intro = document.createElement('div');
+    let intro2 = document.createElement('div');
+    let intro3 = document.createElement('div');
 
     let hours = document.createElement('div');
     let day1 = document.createElement('div');
@@ -33,10 +35,13 @@ export function createHomeButton(){
     let homeBtn = document.createElement('button');
     homeBtn.textContent = 'Home';
 
-    intro.textContent = "At Bobby's pizza we use authentic recipes " +
-    'and fresh ingredients to create the meltiest, tastiest, handcrafted ' +
-    'pizza possible for you!';
-
+    intro.textContent = "At Bobby's pizza we use authentic recipes ";
+    intro.append(lineBreak);
+    intro2.textContent = 'and fresh ingredients to create the meltiest,';
+    intro.append(intro2);
+    intro.append(lineBreak);
+    intro3.textContent = ' tastiest, handcrafted pizza possible, for you!';
+    intro.append(intro3);
     
     day1.textContent = 'Monday: Closed ';
     day2.textContent = 'Tuesday: 12pm-9pm';
