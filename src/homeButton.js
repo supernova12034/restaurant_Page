@@ -12,11 +12,28 @@ them all into index.js
 */
 
 export function createHomeButton(){
-    let homeDiv= document.createElement('div');
-    //We're here, figuring out how to assign a class
-    //or ID to our elements via javascript so we can
-    //perhaps style them.
+    let bottomStyle = document.createElement('div');
+    bottomStyle.style.height = '30vh';
+    bottomStyle.style.width = '100vw';
+    bottomStyle.style.backgroundColor = 'red';
 
+    let mainDiv= document.createElement('div');
+    mainDiv.style.marginTop = '20vh';
+    mainDiv.style.backgroundColor = 'white';
+    mainDiv.style.height = '35vh';
+    mainDiv.style.width = '100vw';
+    
+    //We're here, trying to style a background for our page. 
+    //figuring out how to assign a class
+    //or ID to our elements via javascript so we can
+    //perhaps style them. 
+    /* Do we need to assign classes for styling with CSS
+    when you can just style things directly here in javascript??
+
+    Also what is the art style? 
+    Background color: Italian flag? Pizza ingredients?
+    Figure out the size of the background image/styling. 
+    */
     let intro = document.createElement('div');
     let intro2 = document.createElement('div');
     let intro3 = document.createElement('div');
@@ -80,7 +97,8 @@ export function createHomeButton(){
     
     
 
-    homeDiv.append(homeBtn,lineBreak,intro,hours,location);     
-    document.body.append(homeDiv);//it worked!
+    mainDiv.append(homeBtn,lineBreak,intro,hours,location,bottomStyle);     
+    document.body.append(mainDiv);//it worked!
+    document.body.style.backgroundColor = 'green';
     console.log('homeButton.js');
 }
