@@ -17,11 +17,12 @@ export function createHomeButton(){
     bottomStyle.style.width = '100vw';
     bottomStyle.style.backgroundColor = 'red';
     bottomStyle.style.marginTop = '6vh';
+    
 
     let mainDiv= document.createElement('div');
     mainDiv.style.marginTop = '20vh';
     mainDiv.style.backgroundColor = 'white';
-    mainDiv.style.height = '33vh';
+    mainDiv.style.height = '35.5vh';
     mainDiv.style.width = '100vw';
     
     //We're here, trying to style a background for our page. 
