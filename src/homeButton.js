@@ -13,20 +13,19 @@ them all into index.js
 
 export function createHomeButton(){
     let bottomStyle = document.createElement('div');
-    bottomStyle.style.height = '30vh';
+    bottomStyle.style.height = '33vh';
     bottomStyle.style.width = '100vw';
     bottomStyle.style.backgroundColor = 'red';
+    bottomStyle.style.marginTop = '6vh';
 
     let mainDiv= document.createElement('div');
     mainDiv.style.marginTop = '20vh';
     mainDiv.style.backgroundColor = 'white';
-    mainDiv.style.height = '35vh';
+    mainDiv.style.height = '33vh';
     mainDiv.style.width = '100vw';
     
     //We're here, trying to style a background for our page. 
-    //figuring out how to assign a class
-    //or ID to our elements via javascript so we can
-    //perhaps style them. 
+    
     /* Do we need to assign classes for styling with CSS
     when you can just style things directly here in javascript??
 
