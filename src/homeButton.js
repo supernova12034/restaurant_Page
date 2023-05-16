@@ -20,13 +20,10 @@ export function createHomeButton(){
     
 
     let mainDiv= document.createElement('div');
-    mainDiv.style.marginTop = '20vh';
+    mainDiv.style.marginTop = '7vh';
     mainDiv.style.backgroundColor = 'white';
     mainDiv.style.height = '35.5vh';
     mainDiv.style.width = '100vw';
-    
-    //We're here, working on text style and size.
-    //Use these fonts: Consolas ,Lucida Sans Typewriter
     
     /* Do we need to assign classes for styling with CSS
     when you can just style things directly here in javascript??
@@ -74,7 +71,10 @@ export function createHomeButton(){
     day7.textContent = 'Sunday 12pm-11pm';
 
     hours.append(lineBreak,lineBreak,day1,lineBreak,day2,lineBreak,day3,lineBreak,day4,lineBreak,day5,lineBreak,day6,lineBreak,day7,lineBreak);
-
+    hours.style.marginTop = '8vh';
+    //We're here, tweak the styling so the background colors and
+    //text fit right.
+    
     location.append(lineBreak);
     location.textContent = 'We are conviniently located ';
     location.append(lineBreak);
@@ -84,7 +84,7 @@ export function createHomeButton(){
     location3.textContent = 'at 1 Kings Cross Street, ';
     location.append(location3);
     location.append(lineBreak);
-    location4.textContent = 'London, UK.';
+    location4.textContent = 'London, UK. Testing testing';
     location.append(location4);
     //creating content for our tabs,
     //tweak the styling etc.
@@ -102,6 +102,8 @@ export function createHomeButton(){
     document.body.append(mainDiv);//it worked!
     document.body.style.backgroundColor = 'green';
     document.body.style.marginLeft = 'auto';
+    document.body.style.fontFamily = 'cursive','Consolas','Lucida Sans Typewriter';
+    document.body.style.fontSize = '2rem';
     console.log('homeButton.js');
 }
 
