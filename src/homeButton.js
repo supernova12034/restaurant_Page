@@ -25,7 +25,8 @@ export function createHomeButton(){
     mainDiv.style.height = '35.5vh';
     mainDiv.style.width = '100vw';
     
-    //We're here, trying to style a background for our page. 
+    //We're here, working on text style and size.
+    //Use these fonts: Consolas ,Lucida Sans Typewriter
     
     /* Do we need to assign classes for styling with CSS
     when you can just style things directly here in javascript??
@@ -103,3 +104,4 @@ export function createHomeButton(){
     document.body.style.marginLeft = 'auto';
     console.log('homeButton.js');
 }
+
