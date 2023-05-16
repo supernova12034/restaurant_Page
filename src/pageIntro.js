@@ -19,6 +19,7 @@ let image1 = document.createElement('img');
 image1.setAttribute('src',`${pizza}`); //it works like this!
 image1.setAttribute('width','10vw');
 image1.setAttribute('height','10vh');
+div1.style.backgroundColor = 'green';
 div1.append(image1,header1);
 
 }

@@ -16,7 +16,7 @@ export function createHomeButton(){
     bottomStyle.style.height = '33vh';
     bottomStyle.style.width = '100vw';
     bottomStyle.style.backgroundColor = 'red';
-    bottomStyle.style.marginTop = '6vh';
+    bottomStyle.style.marginTop = '-15vh';
     
 
     let mainDiv= document.createElement('div');
@@ -24,6 +24,7 @@ export function createHomeButton(){
     mainDiv.style.backgroundColor = 'white';
     mainDiv.style.height = '35.5vh';
     mainDiv.style.width = '100vw';
+    mainDiv.style.paddingBottom = '10.5vh';
     
     /* Do we need to assign classes for styling with CSS
     when you can just style things directly here in javascript??
@@ -71,10 +72,10 @@ export function createHomeButton(){
     day7.textContent = 'Sunday 12pm-11pm';
 
     hours.append(lineBreak,lineBreak,day1,lineBreak,day2,lineBreak,day3,lineBreak,day4,lineBreak,day5,lineBreak,day6,lineBreak,day7,lineBreak);
-    hours.style.marginTop = '8vh';
+    hours.style.marginTop = '2vh';
     //We're here, tweak the styling so the background colors and
     //text fit right.
-    
+
     location.append(lineBreak);
     location.textContent = 'We are conviniently located ';
     location.append(lineBreak);
