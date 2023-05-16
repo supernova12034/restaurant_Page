@@ -100,5 +100,6 @@ export function createHomeButton(){
     mainDiv.append(homeBtn,lineBreak,intro,hours,location,bottomStyle);     
     document.body.append(mainDiv);//it worked!
     document.body.style.backgroundColor = 'green';
+    document.body.style.marginLeft = 'auto';
     console.log('homeButton.js');
 }
