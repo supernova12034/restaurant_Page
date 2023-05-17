@@ -12,7 +12,7 @@ them all into index.js
 */
 
 //We're here.
-//Now we gotta tweak the pizza image, make it larger.
+//Gotta move the text to center.
 
 export function createHomeButton(){
     let bottomStyle = document.createElement('div');
@@ -57,6 +57,7 @@ export function createHomeButton(){
 
     let homeBtn = document.createElement('button');
     homeBtn.textContent = 'Home';
+    homeBtn.style.marginLeft = '48vw';
 
     intro.textContent = "At Bobby's pizza we use authentic recipes ";
     intro.append(lineBreak);
@@ -65,7 +66,8 @@ export function createHomeButton(){
     intro.append(lineBreak);
     intro3.textContent = ' tastiest, handcrafted pizza possible, for you!';
     intro.append(intro3);
-    
+    intro.style.marginLeft = '37vw';
+
     day1.textContent = 'Monday: Closed ';
     day2.textContent = 'Tuesday: 12pm-9pm';
     day3.textContent = 'Wednesday: 12pm-9pm';
@@ -76,7 +78,7 @@ export function createHomeButton(){
 
     hours.append(lineBreak,lineBreak,day1,lineBreak,day2,lineBreak,day3,lineBreak,day4,lineBreak,day5,lineBreak,day6,lineBreak,day7,lineBreak);
     hours.style.marginTop = '2vh';
-    
+    hours.style.marginLeft = '37vw';
 
     location.append(lineBreak);
     location.textContent = 'We are conviniently located ';
@@ -89,6 +91,10 @@ export function createHomeButton(){
     location.append(lineBreak);
     location4.textContent = 'London, UK. Testing testing';
     location.append(location4);
+    
+    location.style.marginTop = '2vh';
+    location.style.marginLeft = '37vw';
+
     //creating content for our tabs,
     //tweak the styling etc.
 
