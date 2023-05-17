@@ -12,7 +12,7 @@ them all into index.js
 */
 
 //We're here.
-//Gotta move the text to center.
+//Trying to space the red text correctly (location text).
 
 export function createHomeButton(){
     let bottomStyle = document.createElement('div');
@@ -81,7 +81,9 @@ export function createHomeButton(){
     hours.style.marginLeft = '37vw';
 
     location.append(lineBreak);
+    location.append(lineBreak);
     location.textContent = 'We are conviniently located ';
+
     location.append(lineBreak);
     location2.textContent = 'at platform 9 3/4,';
     location.append(location2);
@@ -92,7 +94,7 @@ export function createHomeButton(){
     location4.textContent = 'London, UK. Testing testing';
     location.append(location4);
     
-    location.style.marginTop = '2vh';
+    // location.style.marginTop = '2vh'; Doesnt work?
     location.style.marginLeft = '37vw';
 
     //creating content for our tabs,
