@@ -11,6 +11,9 @@ them all into index.js
  Just creating the actual content for the 'tabs'.
 */
 
+//We're here.
+//Now we gotta tweak the pizza image, make it larger.
+
 export function createHomeButton(){
     let bottomStyle = document.createElement('div');
     bottomStyle.style.height = '33vh';
@@ -73,8 +76,7 @@ export function createHomeButton(){
 
     hours.append(lineBreak,lineBreak,day1,lineBreak,day2,lineBreak,day3,lineBreak,day4,lineBreak,day5,lineBreak,day6,lineBreak,day7,lineBreak);
     hours.style.marginTop = '2vh';
-    //We're here, tweak the styling so the background colors and
-    //text fit right.
+    
 
     location.append(lineBreak);
     location.textContent = 'We are conviniently located ';

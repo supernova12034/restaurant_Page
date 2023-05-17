@@ -17,8 +17,10 @@ header1.textContent='Greatest Napolitan pizza, this side of the naples!';
 
 let image1 = document.createElement('img');
 image1.setAttribute('src',`${pizza}`); //it works like this!
-image1.setAttribute('width','10vw');
-image1.setAttribute('height','10vh');
+image1.style.height = '12vh';
+image1.style.width = '10vw';
+// image1.setAttribute('width','35vw'); 
+// image1.setAttribute('height','35vh');
 div1.style.backgroundColor = 'green';
 div1.append(image1,header1);
 
