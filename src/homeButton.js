@@ -12,14 +12,13 @@ them all into index.js
 */
 
 //We're here.
-//Trying to space the red text correctly (location text).
 
 export function createHomeButton(){
     let bottomStyle = document.createElement('div');
     bottomStyle.style.height = '33vh';
     bottomStyle.style.width = '100vw';
     bottomStyle.style.backgroundColor = 'red';
-    bottomStyle.style.marginTop = '-17vh'; //this fixed red text issues.
+    bottomStyle.style.marginTop = '-17vh'; //this fixed red text issues!.
     bottomStyle.style.paddingTop = '2vh';
     
 
@@ -31,12 +30,9 @@ export function createHomeButton(){
     mainDiv.style.paddingBottom = '10.5vh';
     
     
-    /* Do we need to assign classes for styling with CSS
-    when you can just style things directly here in javascript??
-
+    /*
     Also what is the art style? 
-    Background color: Italian flag? Pizza ingredients?
-    Figure out the size of the background image/styling. 
+    Background color: Italian flag? Pizza ingredients? 
     */
     let intro = document.createElement('div');
     let intro2 = document.createElement('div');
@@ -96,13 +92,13 @@ export function createHomeButton(){
     location4.textContent = 'London, UK. Testing testing';
     location.append(location4);
     
-    // location.style.paddingTop = '2vh';
+    // location and bottomstyle cover the same area on
+    // our page, so the problem was actually with bottomstyle, which 
+    // we fixed.
     location.style.marginTop = '2vh';
     location.style.marginLeft = '37vw';
 
-    //creating content for our tabs,
-    //tweak the styling etc.
-
+    
     //-Apparently textContent cant be split up into
     //multiple lines...might have to try different
     //approach
@@ -113,7 +109,7 @@ export function createHomeButton(){
     
 
     mainDiv.append(homeBtn,lineBreak,intro,hours,location,bottomStyle);     
-    document.body.append(mainDiv);//it worked!
+    document.body.append(mainDiv);
     document.body.style.backgroundColor = 'green';
     document.body.style.marginLeft = 'auto';
     document.body.style.fontFamily = 'cursive','Consolas','Lucida Sans Typewriter';
