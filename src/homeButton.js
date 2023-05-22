@@ -11,7 +11,7 @@ them all into index.js
  Just creating the actual content for the 'tabs'.
 */
 
-//We're here.
+
 
 export function createHomeButton(){
     let bottomStyle = document.createElement('div');
@@ -56,6 +56,9 @@ export function createHomeButton(){
     let homeBtn = document.createElement('button');
     homeBtn.textContent = 'Home';
     homeBtn.style.marginLeft = '48vw';
+    homeBtn.style.height = '5vh'; //this may have messed up the background.
+    homeBtn.style.width = '7vw';
+    //We're here, making the button bigger.
 
     intro.textContent = "At Bobby's pizza we use authentic recipes ";
     intro.append(lineBreak);
