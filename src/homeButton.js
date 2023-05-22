@@ -55,7 +55,7 @@ export function createHomeButton(){
 
     let homeBtn = document.createElement('button');
     homeBtn.textContent = 'Home';
-    homeBtn.style.marginLeft = '48vw';
+    homeBtn.style.marginLeft = '37vw';
     homeBtn.style.height = '5vh'; 
     homeBtn.style.width = '7vw';
     //We're here, make custom art style buttons? 
