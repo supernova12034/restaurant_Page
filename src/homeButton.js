@@ -56,9 +56,10 @@ export function createHomeButton(){
     let homeBtn = document.createElement('button');
     homeBtn.textContent = 'Home';
     homeBtn.style.marginLeft = '48vw';
-    homeBtn.style.height = '5vh'; //this may have messed up the background.
+    homeBtn.style.height = '5vh'; 
     homeBtn.style.width = '7vw';
-    //We're here, making the button bigger.
+    //We're here, make custom art style buttons? 
+    //Each button being a pizza slice?
 
     intro.textContent = "At Bobby's pizza we use authentic recipes ";
     intro.append(lineBreak);
