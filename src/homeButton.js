@@ -25,7 +25,7 @@ export function createHomeButton(){
     let mainDiv= document.createElement('div');
     mainDiv.style.marginTop = '7vh';
     mainDiv.style.backgroundColor = 'white';
-    mainDiv.style.height = '35.5vh';
+    mainDiv.style.height = '36.5vh';
     mainDiv.style.width = '100vw';
     mainDiv.style.paddingBottom = '10.5vh';
     
