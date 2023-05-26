@@ -11,17 +11,22 @@ them all into index.js
  Just creating the actual content for the 'tabs'.
 */
 
+/*Not sure if we can access mainDiv from another module (also dont want to
+   call createHomeButton function twice. ) so going to try 
+   and create a little test variable to see if we can access that. 
+   (accessVariable)
+   (trying to narrow down the source of the problem)*/
+    export {createHomeButton};
 
-
-export function createHomeButton(){
+    function createHomeButton(){
     let bottomStyle = document.createElement('div');
     bottomStyle.style.height = '33vh';
     bottomStyle.style.width = '100vw';
     bottomStyle.style.backgroundColor = 'red';
-    bottomStyle.style.marginTop = '-17vh'; //this fixed red text issues!.
+    bottomStyle.style.marginTop = '-17vh'; 
     bottomStyle.style.paddingTop = '2vh';
     
-
+    let accessVariable = 'You are able to access this variable.';
     let mainDiv= document.createElement('div');
     mainDiv.style.marginTop = '7vh';
     mainDiv.style.backgroundColor = 'white';
