@@ -25,8 +25,8 @@ them all into index.js
     bottomStyle.style.backgroundColor = 'red';
     bottomStyle.style.marginTop = '-17vh'; 
     bottomStyle.style.paddingTop = '2vh';
+       
     
-    let accessVariable = 'You are able to access this variable.';
     let mainDiv= document.createElement('div');
     mainDiv.style.marginTop = '7vh';
     mainDiv.style.backgroundColor = 'white';
@@ -63,8 +63,7 @@ them all into index.js
     homeBtn.style.marginLeft = '37vw';
     homeBtn.style.height = '5vh'; 
     homeBtn.style.width = '7vw';
-    //We're here, make custom art style buttons? 
-    //Each button being a pizza slice?
+    
 
     intro.textContent = "At Bobby's pizza we use authentic recipes ";
     intro.append(lineBreak);

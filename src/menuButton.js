@@ -22,24 +22,18 @@ changed in the new module.*/
 //experiment.
 
 export function createMenuButton(){
-    console.log('testing menu button 1 '); //code seems to work upto here.
-    console.log(accessVariable); /* We're here.
-                                    Cant access this test variable..
-                                    also says what we import is declared
-                                    but never used? 
-                                    Also getting error that says accessVariable
-                                    is not defined...
-                                    This is all related. 
-                                    ALso read into let, var, const...
-                                    they may be causing problems as well..*/   
-
-let menuMainDiv = document.createElement('div');
+   
+                                    
+let menuButtonDiv = document.createElement('div');
 
 let menuBtn = document.createElement('button');
 menuBtn.textContent = 'Menu';
 menuBtn.style.height = '5vh';
-menuBtn.style.width = '5vw';
-mainDiv.append(menuBtn); //experiment. We're here. The button isnt appearing?
-console.log('testing menu button 2');
+menuBtn.style.width = '7vw';
+menuButtonDiv.append(menuBtn); 
+document.body.append(menuButtonDiv);
 
 }
+//why not just append menuBtn in its own div
+//instead of trying to put it in the div from a different
+//module?? (IT WORKED!!!) We're here. Now just gotta position it correctly.
