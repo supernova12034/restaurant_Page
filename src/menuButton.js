@@ -25,11 +25,14 @@ export function createMenuButton(){
    
                                     
 let menuButtonDiv = document.createElement('div');
+menuButtonDiv.style.marginTop = '-47vh';        //we styled the parent div(its better)
+menuButtonDiv.style.marginLeft = '47vw';
 
 let menuBtn = document.createElement('button');
 menuBtn.textContent = 'Menu';
 menuBtn.style.height = '5vh';
 menuBtn.style.width = '7vw';
+
 menuButtonDiv.append(menuBtn); 
 document.body.append(menuButtonDiv);
 
