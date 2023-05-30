@@ -1,7 +1,10 @@
 import {createHomeButton} from './homeButton';
 
 /*Creating buttons that allow you to 'tab' into
-various pages without leaving the actual page?
+various pages without leaving the actual page?   <---We're here now.
+-Upon clicking the button, disappear the text from the other div?
+And appear the text from the current button div?
+
 
 tab 1)Home (with Intro, hours, location)
 tab 2)Menu
@@ -37,6 +40,3 @@ menuButtonDiv.append(menuBtn);
 document.body.append(menuButtonDiv);
 
 }
-//why not just append menuBtn in its own div
-//instead of trying to put it in the div from a different
-//module?? (IT WORKED!!!) We're here. Now just gotta position it correctly.
