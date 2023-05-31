@@ -73,6 +73,11 @@ them all into index.js
     intro3.textContent = ' tastiest, handcrafted pizza possible, for you!';
     intro.append(intro3);
     intro.style.marginLeft = '37vw';
+    
+    //Create a function here that sets opacity of text to 0,
+    //but dont call it here, call it from the other module, once
+    //the other button is clicked.
+    
 
     day1.textContent = 'Monday: Closed ';
     day2.textContent = 'Tuesday: 12pm-9pm';

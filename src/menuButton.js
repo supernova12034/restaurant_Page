@@ -1,9 +1,6 @@
 import {createHomeButton} from './homeButton';
 
-/*Creating buttons that allow you to 'tab' into
-various pages without leaving the actual page?   <---We're here now.
--Upon clicking the button, disappear the text from the other div?
-And appear the text from the current button div?
+/*
 
 
 tab 1)Home (with Intro, hours, location)
@@ -24,6 +21,15 @@ an object, and must be treated as such, even if its name is
 changed in the new module.*/ 
 //experiment.
 
+
+/*
+Creating buttons that allow you to 'tab' into
+various pages without leaving the actual page?   <---We're here now.
+
+-Upon clicking the button, disappear the text from the other div?
+And appear the text from the current button div?(YES! You can use style.opacity)
+ */
+
 export function createMenuButton(){
    
                                     
@@ -38,5 +44,9 @@ menuBtn.style.width = '7vw';
 
 menuButtonDiv.append(menuBtn); 
 document.body.append(menuButtonDiv);
+
+menuBtn.addEventListener('click',()=>{
+    
+});
 
 }
