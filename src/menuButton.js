@@ -46,7 +46,8 @@ menuButtonDiv.append(menuBtn);
 document.body.append(menuButtonDiv);
 
 menuBtn.addEventListener('click',()=>{
-    
+    homeOpacity(); //We're here. Didnt work, going in the 
+                    //right direction though.
 });
 
 }

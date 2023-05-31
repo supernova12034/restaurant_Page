@@ -74,10 +74,14 @@ them all into index.js
     intro.append(intro3);
     intro.style.marginLeft = '37vw';
     
-    //Create a function here that sets opacity of text to 0,
+    //We're here. Create a function here that sets opacity of text to 0,
     //but dont call it here, call it from the other module, once
     //the other button is clicked.
-    
+
+    function homeOpacity(){
+        intro.style.opacity = '0';
+    }
+
 
     day1.textContent = 'Monday: Closed ';
     day2.textContent = 'Tuesday: 12pm-9pm';
