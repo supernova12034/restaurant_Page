@@ -16,7 +16,7 @@ them all into index.js
    and create a little test variable to see if we can access that. 
    (accessVariable)
    (trying to narrow down the source of the problem)*/
-    export {createHomeButton};
+    export {createHomeButton,homeOpacity};
 
     function createHomeButton(){
     let bottomStyle = document.createElement('div');
@@ -78,8 +78,10 @@ them all into index.js
     //but dont call it here, call it from the other module, once
     //the other button is clicked.
 
-    function homeOpacity(){
+     function homeOpacity(){
+        
         intro.style.opacity = '0';
+        
     }
 
 
@@ -131,6 +133,6 @@ them all into index.js
     document.body.style.marginLeft = 'auto';
     document.body.style.fontFamily = 'cursive','Consolas','Lucida Sans Typewriter';
     document.body.style.fontSize = '2rem';
-    console.log('homeButton.js');
+    
 }
 

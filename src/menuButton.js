@@ -1,4 +1,4 @@
-import {createHomeButton} from './homeButton';
+import {createHomeButton,homeOpacity} from './homeButton';
 
 /*
 
