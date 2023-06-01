@@ -1,5 +1,5 @@
-import {createHomeButton,homeOpacity} from './homeButton';
-
+// import {createHomeButton,homeOpacity} from './homeButton';
+import * as home from './homeButton';
 /*
 
 
@@ -46,8 +46,9 @@ menuButtonDiv.append(menuBtn);
 document.body.append(menuButtonDiv);
 
 menuBtn.addEventListener('click',()=>{
-    homeOpacity(); //We're here. Didnt work, going in the 
-                    //right direction though.
+    home.homeOpacity(); //didnt work
 });
 
 }
+//We're here. Didnt work, going in the 
+//right direction though.

@@ -16,7 +16,7 @@ them all into index.js
    and create a little test variable to see if we can access that. 
    (accessVariable)
    (trying to narrow down the source of the problem)*/
-    export {createHomeButton,homeOpacity};
+    export {createHomeButton,homeOpacity}; //the problem might be here..
 
     function createHomeButton(){
     let bottomStyle = document.createElement('div');
@@ -79,7 +79,7 @@ them all into index.js
     //the other button is clicked.
 
      function homeOpacity(){
-        
+        console.log('opacity test');
         intro.style.opacity = '0';
         
     }

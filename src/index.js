@@ -12,5 +12,4 @@ pageLoad();
 
 createHomeButton();
 
-//after this line problem starts.
-createMenuButton(); //experiment
+createMenuButton(); 
