@@ -9,7 +9,7 @@ in the HTML doc as type=module to be able to use import/export.
 import pizza from './pizza.png';
 
 export function pageLoad(){
-console.log('testing pageIntro.js');
+
 let div1 = document.getElementById('content');
 
 let header1 = document.createElement('h1');    

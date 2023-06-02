@@ -1,5 +1,5 @@
-// import {createHomeButton,homeOpacity} from './homeButton';
-import * as home from './homeButton';
+import {createHomeButton} from './homeButton';
+// import * as home from './homeButton';
 /*
 
 
@@ -46,9 +46,15 @@ menuButtonDiv.append(menuBtn);
 document.body.append(menuButtonDiv);
 
 menuBtn.addEventListener('click',()=>{
-    home.homeOpacity(); //didnt work
+    console.log('event listener activated, menuButton.js');
+    homeOpacity(); 
 });
 
 }
-//We're here. Didnt work, going in the 
-//right direction though.
+/*We're here. Didnt work, trying to 
+narrow down the problem, no idea where it is.
+Could be in index.js
+homeButton.js
+menuButton.js
+
+*/
