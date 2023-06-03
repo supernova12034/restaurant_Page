@@ -1,5 +1,42 @@
-import {createHomeButton} from './homeButton';
-// import * as home from './homeButton';
+// import {createHomeButton} from './homeButton';
+import * as home from './homeButton';
+home.createHomeButton(); 
+//We're here, executed the function here instead of index.js
+//Still getting an error though. Ask for help.
+
+export function createMenuButton(){
+   
+                                    
+let menuButtonDiv = document.createElement('div');
+menuButtonDiv.style.marginTop = '-47vh';        //we styled the parent div(its better)
+menuButtonDiv.style.marginLeft = '47vw';
+
+let menuBtn = document.createElement('button');
+menuBtn.textContent = 'Menu';
+menuBtn.style.height = '5vh';
+menuBtn.style.width = '7vw';
+
+menuButtonDiv.append(menuBtn); 
+document.body.append(menuButtonDiv);
+
+menuBtn.addEventListener('click',()=>{
+    console.log('event listener activated, menuButton.js');
+    home.homeOpacity();
+    // homeOpacity(); 
+});
+
+}
+/*We're here. Didnt work, trying to 
+narrow down the problem, no idea where it is.
+Could be in index.js
+homeButton.js
+menuButton.js
+
+*/
+
+
+//----Notes:---------
+
 /*
 
 
@@ -29,32 +66,3 @@ various pages without leaving the actual page?   <---We're here now.
 -Upon clicking the button, disappear the text from the other div?
 And appear the text from the current button div?(YES! You can use style.opacity)
  */
-
-export function createMenuButton(){
-   
-                                    
-let menuButtonDiv = document.createElement('div');
-menuButtonDiv.style.marginTop = '-47vh';        //we styled the parent div(its better)
-menuButtonDiv.style.marginLeft = '47vw';
-
-let menuBtn = document.createElement('button');
-menuBtn.textContent = 'Menu';
-menuBtn.style.height = '5vh';
-menuBtn.style.width = '7vw';
-
-menuButtonDiv.append(menuBtn); 
-document.body.append(menuButtonDiv);
-
-menuBtn.addEventListener('click',()=>{
-    console.log('event listener activated, menuButton.js');
-    homeOpacity(); 
-});
-
-}
-/*We're here. Didnt work, trying to 
-narrow down the problem, no idea where it is.
-Could be in index.js
-homeButton.js
-menuButton.js
-
-*/
