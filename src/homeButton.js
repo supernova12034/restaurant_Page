@@ -1,22 +1,5 @@
-/*Creating buttons that allow you to 'tab' into
-various pages without leaving the actual page?
 
-tab 1)Home (with Intro, hours, location)
-tab 2)Menu
-tab 3)Contact
- 
-Create a seperate module for each 'tab' and export and import
-them all into index.js
-
- Just creating the actual content for the 'tabs'.
-*/
-
-/*Not sure if we can access mainDiv from another module (also dont want to
-   call createHomeButton function twice. ) so going to try 
-   and create a little test variable to see if we can access that. 
-   (accessVariable)
-   (trying to narrow down the source of the problem)*/
-    export {createHomeButton}; //the problem might be here..
+    export {createHomeButton}; 
 
     function createHomeButton(){
     let bottomStyle = document.createElement('div');
@@ -35,10 +18,7 @@ them all into index.js
     mainDiv.style.paddingBottom = '10.5vh';
     
     
-    /*
-    Also what is the art style? 
-    Background color: Italian flag? Pizza ingredients? 
-    */
+   
     let intro = document.createElement('div');
     let intro2 = document.createElement('div');
     let intro3 = document.createElement('div');
@@ -74,7 +54,7 @@ them all into index.js
     intro.append(intro3);
     intro.style.marginLeft = '37vw';
     
-    //We're here. Create a function here that sets opacity of text to 0,
+    //Create a function here that sets opacity of text to 0,
     //but dont call it here, call it from the other module, once
     //the other button is clicked.
 
@@ -111,9 +91,6 @@ them all into index.js
     location4.textContent = 'London, UK. Testing testing';
     location.append(location4);
     
-    // location and bottomstyle cover the same area on
-    // our page, so the problem was actually with bottomstyle, which 
-    // we fixed.
     location.style.marginTop = '2vh';
     location.style.marginLeft = '37vw';
 
@@ -125,8 +102,6 @@ them all into index.js
     //append them into the hours div? (It worked!)
    
     
-    
-
     mainDiv.append(homeBtn,lineBreak,intro,hours,location,bottomStyle);     
     document.body.append(mainDiv);
     document.body.style.backgroundColor = 'green';
@@ -137,3 +112,19 @@ them all into index.js
     return homeOpacity;
 }
 
+
+
+
+//-------Notes------------
+/*Creating buttons that allow you to 'tab' into
+various pages without leaving the actual page?
+
+tab 1)Home (with Intro, hours, location)
+tab 2)Menu
+tab 3)Contact
+ 
+Create a seperate module for each 'tab' and export and import
+them all into index.js
+
+ Just creating the actual content for the 'tabs'.
+*/

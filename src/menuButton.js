@@ -1,14 +1,13 @@
 // import {createHomeButton} from './homeButton';
 import * as home from './homeButton';
 home.createHomeButton(); 
-//We're here, executed the function here instead of index.js
-//Still getting an error though. Ask for help.
+
 
 export function createMenuButton(){
    
                                     
 let menuButtonDiv = document.createElement('div');
-menuButtonDiv.style.marginTop = '-47vh';        //we styled the parent div(its better)
+menuButtonDiv.style.marginTop = '-47vh';        
 menuButtonDiv.style.marginLeft = '47vw';
 
 let menuBtn = document.createElement('button');
@@ -26,13 +25,13 @@ menuBtn.addEventListener('click',()=>{
 });
 
 }
-/*We're here. Didnt work, trying to 
-narrow down the problem, no idea where it is.
-Could be in index.js
-homeButton.js
-menuButton.js
 
-*/
+
+
+
+
+
+
 
 
 //----Notes:---------
