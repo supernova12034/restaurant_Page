@@ -1,6 +1,6 @@
 
 import {pageLoad} from './pageIntro';
-import {createHomeButton} from './homeButton';
+import {home} from './homeButton';
 import {createMenuButton} from './menuButton';
 console.log('index 1 ');
 pageLoad();

@@ -1,5 +1,5 @@
 // import {createHomeButton} from './homeButton';
-import * as home from './homeButton';
+import {home}from './homeButton';
 home.createHomeButton(); 
 
 
