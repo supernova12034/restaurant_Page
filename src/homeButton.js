@@ -3,6 +3,8 @@
 
 
     let home = {
+        intro: document.createElement('div'),
+        //IT WORKED HOLY CRAP!
         createHomeButton :function (){
             let bottomStyle = document.createElement('div');
             bottomStyle.style.height = '33vh';
@@ -21,7 +23,7 @@
             
             
            
-            let intro = document.createElement('div');
+            
             let intro2 = document.createElement('div');
             let intro3 = document.createElement('div');
         
@@ -47,14 +49,14 @@
             homeBtn.style.width = '7vw';
             
         
-            intro.textContent = "At Bobby's pizza we use authentic recipes ";
-            intro.append(lineBreak);
+            this.intro.textContent = "At Bobby's pizza we use authentic recipes ";
+            this.intro.append(lineBreak);
             intro2.textContent = 'and fresh ingredients to create the meltiest,';
-            intro.append(intro2);
-            intro.append(lineBreak);
+            this.intro.append(intro2);
+            this.intro.append(lineBreak);
             intro3.textContent = ' tastiest, handcrafted pizza possible, for you!';
-            intro.append(intro3);
-            intro.style.marginLeft = '37vw';
+            this.intro.append(intro3);
+            this.intro.style.marginLeft = '37vw';
             
             //Create a function here that sets opacity of text to 0,
             //but dont call it here, call it from the other module, once
@@ -98,7 +100,7 @@
             //append them into the hours div? (It worked!)
            
             
-            mainDiv.append(homeBtn,lineBreak,intro,hours,location,bottomStyle);     
+            mainDiv.append(homeBtn,lineBreak,this.intro,hours,location,bottomStyle);     
             document.body.append(mainDiv);
             document.body.style.backgroundColor = 'green';
             document.body.style.marginLeft = 'auto';
