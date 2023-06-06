@@ -43,6 +43,9 @@
             let location4 = document.createElement('div');
         
             let homeBtn = document.createElement('button');
+            homeBtn.addEventListener('click',()=>{
+                this.intro.style.opacity = '1';
+            });
             homeBtn.textContent = 'Home';
             homeBtn.style.marginLeft = '37vw';
             homeBtn.style.height = '5vh'; 
