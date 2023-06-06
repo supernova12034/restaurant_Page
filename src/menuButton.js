@@ -21,7 +21,7 @@ document.body.append(menuButtonDiv);
 menuBtn.addEventListener('click',()=>{
     console.log('event listener activated, menuButton.js');
     home.homeOpacity();
-    // homeOpacity(); 
+    
 });
 
 }
@@ -29,7 +29,12 @@ menuBtn.addEventListener('click',()=>{
 
 
 
-
+/*We're here.
+Right now the menu button just makes the home button content disappear,
+Now we have to create an actual menu, then in addition to making the other
+content disappear, we have to make the new content appear when the 
+menu button is pressed. 
+*/
 
 
 
