@@ -15,6 +15,8 @@ menuBtn.textContent = 'Menu';
 menuBtn.style.height = '5vh';
 menuBtn.style.width = '7vw';
 
+
+
 menuButtonDiv.append(menuBtn); 
 document.body.append(menuButtonDiv);
 
@@ -34,6 +36,12 @@ Right now the menu button just makes the home button content disappear,
 Now we have to create an actual menu, then in addition to making the other
 content disappear, we have to make the new content appear when the 
 menu button is pressed. 
+
+Menu content:
+-Neopolitan pizza (pic done)
+-Pizza Patatosa
+-sicilian pizza
+-Pizza Melanzane
 */
 
 
