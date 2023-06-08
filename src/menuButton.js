@@ -39,9 +39,9 @@ menu button is pressed.
 
 Menu content:
 -Neopolitan pizza (pic done)
--Pizza Patatosa
--sicilian pizza
--Pizza Melanzane
+-Pizza Patatosa (pic done)
+-sicilian pizza (pic done)
+-Pizza Melanzane(pic done)
 */
 
 
