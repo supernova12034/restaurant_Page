@@ -39,6 +39,9 @@ menu button is pressed.
 
 Menu content:
 -Neopolitan pizza (pic done)
+Our Signature Neopolitan pizza is made with quality, buffalo 
+mozarella cheese, and san marzano tomatoes, toped with fresh basil, 
+produced by local farmers, with flavors that will remind you of naples! 
 -Pizza Patatosa (pic done)
 -sicilian pizza (pic done)
 -Pizza Melanzane(pic done)
