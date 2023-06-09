@@ -50,7 +50,9 @@ delicious buffalo mozarella cheese!
 Our sicilian pizza is made of thick crust,
 with toppings that include onions, tomatoes, anchovies, toma cheese.
 -Pizza Melanzane(pic done)
-
+Our pizza Melanzane is prepared with fresh slices of fried eggplant and
+buffalo mozarella cheese, topped with extra virgin olive oil, 
+and your choice of herbs.
 */
 
 
