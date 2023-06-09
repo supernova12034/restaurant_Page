@@ -43,8 +43,14 @@ Our Signature Neopolitan pizza is made with quality, buffalo
 mozarella cheese, and san marzano tomatoes, toped with fresh basil, 
 produced by local farmers, with flavors that will remind you of naples! 
 -Pizza Patatosa (pic done)
+Our patatosa pizza is made with top quality thinly sliced potatoes, bathed in 
+a marinate of extra virgin olive oil, herbs, and sea salt, and topped with 
+delicious buffalo mozarella cheese!
 -sicilian pizza (pic done)
+Our sicilian pizza is made of thick crust,
+with toppings that include onions, tomatoes, anchovies, toma cheese.
 -Pizza Melanzane(pic done)
+
 */
 
 
