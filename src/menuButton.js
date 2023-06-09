@@ -18,12 +18,23 @@ menuBtn.style.width = '7vw';
 let pizzaNeopalitan = document.createElement('div');
 let pizzaPatatosa = document.createElement('div');
 let pizzaScicilian = document.createElement('div');
-//we're here.
+let pizzaMelanzane = document.createElement('div');
+pizzaNeopalitan.innerHTML += 'Our Signature Neopolitan pizza is made with quality, <br />';
+pizzaNeopalitan.innerHTML += 'buffalo mozarella cheese, and san marzano tomatoes, toped with fresh basil,  <br />';
+pizzaNeopalitan.innerHTML += 'produced by local farmers, with flavors that will remind you of naples!  <br />';
+pizzaNeopalitan.style.opacity = '0';
+/*we're here. Trying to put the menu onto the page,
+set its opacity to 0, and then upon clicking the menu button, 
+setting its opacity to 1.  (We're using innerHTML to put the 
+text on several lines, since that doesnt work well with textContent.)
+*/
 
-menuButtonDiv.append(menuBtn); 
+
+menuButtonDiv.append(menuBtn,pizzaNeopalitan); 
 document.body.append(menuButtonDiv);
 
 menuBtn.addEventListener('click',()=>{
+    pizzaNeopalitan.style.opacity = '1';
     console.log('event listener activated, menuButton.js');
     home.homeOpacity();
     
@@ -42,9 +53,8 @@ menu button is pressed.
 
 Menu content:
 -Neopolitan pizza (pic done)
-Our Signature Neopolitan pizza is made with quality, buffalo 
-mozarella cheese, and san marzano tomatoes, toped with fresh basil, 
-produced by local farmers, with flavors that will remind you of naples! 
+
+
 -Pizza Patatosa (pic done)
 Our patatosa pizza is made with top quality thinly sliced potatoes, bathed in 
 a marinate of extra virgin olive oil, herbs, and sea salt, and topped with 
