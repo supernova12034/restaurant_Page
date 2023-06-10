@@ -6,6 +6,7 @@
         intro: document.createElement('div'),
         //IT WORKED HOLY CRAP!
         hours: document.createElement('div'),
+
         createHomeButton :function (){
             let bottomStyle = document.createElement('div');
             bottomStyle.style.height = '33vh';
@@ -47,7 +48,13 @@
             homeBtn.addEventListener('click',()=>{
                 this.intro.style.opacity = '1';
                 this.hours.style.opacity = '1';
+                pizzaNeopalitan.style.opacity = '1';
+                                                    /* this didnt work likely
+                                                    due to access.
+                                                    We're here, need to 
+                                                    resolve this. */
             });
+
             homeBtn.textContent = 'Home';
             homeBtn.style.marginLeft = '37vw';
             homeBtn.style.height = '5vh'; 
@@ -63,10 +70,7 @@
             this.intro.append(intro3);
             this.intro.style.marginLeft = '37vw';
             
-            //Create a function here that sets opacity of text to 0,
-            //but dont call it here, call it from the other module, once
-            //the other button is clicked.
-        
+            
         
             day1.textContent = 'Monday: Closed ';
             day2.textContent = 'Tuesday: 12pm-9pm';
@@ -119,8 +123,7 @@
             console.log('opacity function homeButton.js');
             this.intro.style.opacity = '0';
             this.hours.style.opacity = '0';
-            //we're here, the problem is definaitely here,
-            //trying to figure out how to resolve it.
+            
         }
         
     };

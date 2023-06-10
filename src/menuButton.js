@@ -29,7 +29,9 @@ setting its opacity to 1.  (We're using innerHTML to put the
 text on several lines, since that doesnt work well with textContent.)
 (It works!)
 But in addition we also have to make the rest of the home content disappear
-AND add the rest of the pizza's to the menu.
+AND add the rest of the pizza's to the menu
+
+Have to make the pizza menu disappear once the home button is clicked.
 */
 
 
