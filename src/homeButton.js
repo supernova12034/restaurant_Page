@@ -5,6 +5,7 @@
     let home = {
         intro: document.createElement('div'),
         //IT WORKED HOLY CRAP!
+        hours: document.createElement('div'),
         createHomeButton :function (){
             let bottomStyle = document.createElement('div');
             bottomStyle.style.height = '33vh';
@@ -27,7 +28,7 @@
             let intro2 = document.createElement('div');
             let intro3 = document.createElement('div');
         
-            let hours = document.createElement('div');
+            
             let day1 = document.createElement('div');
             let day2 = document.createElement('div');
             let day3 = document.createElement('div');
@@ -45,6 +46,7 @@
             let homeBtn = document.createElement('button');
             homeBtn.addEventListener('click',()=>{
                 this.intro.style.opacity = '1';
+                this.hours.style.opacity = '1';
             });
             homeBtn.textContent = 'Home';
             homeBtn.style.marginLeft = '37vw';
@@ -74,9 +76,9 @@
             day6.textContent = 'Saturday 12pm-11pm';
             day7.textContent = 'Sunday 12pm-11pm';
         
-            hours.append(lineBreak,lineBreak,day1,lineBreak,day2,lineBreak,day3,lineBreak,day4,lineBreak,day5,lineBreak,day6,lineBreak,day7,lineBreak);
-            hours.style.marginTop = '2vh';
-            hours.style.marginLeft = '37vw';
+            this.hours.append(lineBreak,lineBreak,day1,lineBreak,day2,lineBreak,day3,lineBreak,day4,lineBreak,day5,lineBreak,day6,lineBreak,day7,lineBreak);
+            this.hours.style.marginTop = '2vh';
+            this.hours.style.marginLeft = '37vw';
         
             location.append(lineBreak);
             location.append(lineBreak);
@@ -103,7 +105,7 @@
             //append them into the hours div? (It worked!)
            
             
-            mainDiv.append(homeBtn,lineBreak,this.intro,hours,location,bottomStyle);     
+            mainDiv.append(homeBtn,lineBreak,this.intro,this.hours,location,bottomStyle);     
             document.body.append(mainDiv);
             document.body.style.backgroundColor = 'green';
             document.body.style.marginLeft = 'auto';
@@ -116,6 +118,7 @@
         homeOpacity :function (){
             console.log('opacity function homeButton.js');
             this.intro.style.opacity = '0';
+            this.hours.style.opacity = '0';
             //we're here, the problem is definaitely here,
             //trying to figure out how to resolve it.
         }

@@ -27,6 +27,9 @@ pizzaNeopalitan.style.opacity = '0';
 set its opacity to 0, and then upon clicking the menu button, 
 setting its opacity to 1.  (We're using innerHTML to put the 
 text on several lines, since that doesnt work well with textContent.)
+(It works!)
+But in addition we also have to make the rest of the home content disappear
+AND add the rest of the pizza's to the menu.
 */
 
 
