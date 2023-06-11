@@ -1,7 +1,13 @@
 
     export {home}; 
 
+    
 
+    /* Guess we're gonna have to turn 
+    createMenuButton into an object as well(like we 
+        did with home object)so as to bypass the scope access
+    issues etc... 
+    */
     let home = {
         intro: document.createElement('div'),
         //IT WORKED HOLY CRAP!
@@ -48,7 +54,7 @@
             homeBtn.addEventListener('click',()=>{
                 this.intro.style.opacity = '1';
                 this.hours.style.opacity = '1';
-                pizzaNeopalitan.style.opacity = '1';
+                pizzaNeopalitan.style.opacity = '0';
                                                     /* this didnt work likely
                                                     due to access.
                                                     We're here, need to 
