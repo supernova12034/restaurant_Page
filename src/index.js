@@ -1,12 +1,12 @@
 
 import {pageLoad} from './pageIntro';
 import {home} from './homeButton';
-import {createMenuButton} from './menuButton';
-console.log('index 1 ');
+import {menu} from './menuButton';
+
 pageLoad();
-console.log('index 2');
+
 // createHomeButton();
-console.log('index 3');
-createMenuButton(); 
-console.log('index 4');
+
+menu.createMenuButton(); 
+
 
