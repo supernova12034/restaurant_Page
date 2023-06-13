@@ -4,7 +4,9 @@ export {menu};
 home.createHomeButton(); 
 
 let menu = {
-    
+    /*Bring the pizza neopolitan up and treated it as
+    a property, so you can access it from the other module to 
+    affect its opacity. */
     
     createMenuButton:function(){
    
