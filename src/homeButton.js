@@ -1,7 +1,7 @@
 
     export {home}; 
 
-    // import {menu} from "./menuButton";
+    // import {menu} from "./menuButton"; //experiment
 
     /* Guess we're gonna have to turn 
     createMenuButton into an object as well(like we 
@@ -54,7 +54,7 @@
             homeBtn.addEventListener('click',()=>{
                 this.intro.style.opacity = '1';
                 this.hours.style.opacity = '1';
-                pizzaNeopalitan.style.opacity = '0';
+                menu.pizzaNeopalitan.style.opacity = '0';
                                                     /* this didnt work likely
                                                     due to access.
                                                     We're here, need to 
