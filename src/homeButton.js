@@ -1,19 +1,16 @@
-
+console.log('home button module');
     export {home}; 
+    
+    //import { menu } from "./menuButton"; 
 
-    // import {menu} from "./menuButton"; //experiment
-
-    /* Guess we're gonna have to turn 
-    createMenuButton into an object as well(like we 
-        did with home object)so as to bypass the scope access
-    issues etc... 
-    */
     let home = {
+        
         intro: document.createElement('div'),
-        //IT WORKED HOLY CRAP!
+        
         hours: document.createElement('div'),
 
         createHomeButton :function (){
+
             let bottomStyle = document.createElement('div');
             bottomStyle.style.height = '33vh';
             bottomStyle.style.width = '100vw';
@@ -126,7 +123,7 @@
         },
 
         homeOpacity :function (){
-            console.log('opacity function homeButton.js');
+            
             this.intro.style.opacity = '0';
             this.hours.style.opacity = '0';
             
@@ -150,4 +147,22 @@ Create a seperate module for each 'tab' and export and import
 them all into index.js
 
  Just creating the actual content for the 'tabs'.
+
+----
+
+          //We're here.
+    //Lets find out which module is executing in which order,
+    //maybe that will give us a clue as to why the page turns blank
+    //when we import menu?
+
+     /* Should I turn these objects into 
+     constructor functions, so we can use them to create 
+     objects and access their properties without having to 
+     execute them?*/
+
+    /* Guess we're gonna have to turn 
+    createMenuButton into an object as well(like we 
+        did with home object)so as to bypass the scope access
+    issues etc... 
+    
 */

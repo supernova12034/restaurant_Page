@@ -1,3 +1,4 @@
+console.log('index module.');
 
 import {pageLoad} from './pageIntro';
 import {home} from './homeButton';
@@ -7,6 +8,6 @@ pageLoad();
 
 // createHomeButton();
 
-menu.createMenuButton(); 
+menu.createMenuButton();  //experiment
 
 

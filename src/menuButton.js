@@ -1,4 +1,5 @@
-// import {createHomeButton} from './homeButton';
+console.log('menu module');
+
 import {home}from './homeButton';
 export {menu};
 home.createHomeButton(); 
@@ -46,7 +47,7 @@ let menu = {
         
         menuBtn.addEventListener('click',()=>{
             this.pizzaNeopalitan.style.opacity = '1';
-            console.log('event listener activated, menuButton.js');
+            
             home.homeOpacity();
             
         });
