@@ -1,15 +1,12 @@
 console.log('home button module');
-    export {home}; 
+    export {createHomeButton}; 
     
-    //import { menu } from "./menuButton"; 
+ /*So far so good */    
+       
 
-    let home = {
-        
-        intro: document.createElement('div'),
-        
-        hours: document.createElement('div'),
+         function createHomeButton(){
 
-        createHomeButton :function (){
+            let hours = document.createElement('div');
 
             let bottomStyle = document.createElement('div');
             bottomStyle.style.height = '33vh';
@@ -28,7 +25,7 @@ console.log('home button module');
             
             
            
-            
+            let intro= document.createElement('div');
             let intro2 = document.createElement('div');
             let intro3 = document.createElement('div');
         
@@ -49,13 +46,17 @@ console.log('home button module');
         
             let homeBtn = document.createElement('button');
             homeBtn.addEventListener('click',()=>{
-                this.intro.style.opacity = '1';
-                this.hours.style.opacity = '1';
+                intro.style.opacity = '1';
+                hours.style.opacity = '1';
                 menu.pizzaNeopalitan.style.opacity = '0';
-                                                    /* this didnt work likely
-                                                    due to access.
-                                                    We're here, need to 
-                                                    resolve this. */
+                                                    /* We're here...
+                                                    have to figure out the logic
+                                                    of this section...
+                                                    Upon clicking these buttons,
+                                                    one set of text should appear
+                                                    and the other disappear,
+                                                    HOWEVER, this should be done 
+                                                    WITHOUT circular dependencies...*/
             });
 
             homeBtn.textContent = 'Home';
@@ -64,14 +65,14 @@ console.log('home button module');
             homeBtn.style.width = '7vw';
             
         
-            this.intro.textContent = "At Bobby's pizza we use authentic recipes ";
-            this.intro.append(lineBreak);
+            intro.textContent = "At Bobby's pizza we use authentic recipes ";
+            intro.append(lineBreak);
             intro2.textContent = 'and fresh ingredients to create the meltiest,';
-            this.intro.append(intro2);
-            this.intro.append(lineBreak);
+            intro.append(intro2);
+            intro.append(lineBreak);
             intro3.textContent = ' tastiest, handcrafted pizza possible, for you!';
-            this.intro.append(intro3);
-            this.intro.style.marginLeft = '37vw';
+            intro.append(intro3);
+            intro.style.marginLeft = '37vw';
             
             
         
@@ -83,9 +84,9 @@ console.log('home button module');
             day6.textContent = 'Saturday 12pm-11pm';
             day7.textContent = 'Sunday 12pm-11pm';
         
-            this.hours.append(lineBreak,lineBreak,day1,lineBreak,day2,lineBreak,day3,lineBreak,day4,lineBreak,day5,lineBreak,day6,lineBreak,day7,lineBreak);
-            this.hours.style.marginTop = '2vh';
-            this.hours.style.marginLeft = '37vw';
+            hours.append(lineBreak,lineBreak,day1,lineBreak,day2,lineBreak,day3,lineBreak,day4,lineBreak,day5,lineBreak,day6,lineBreak,day7,lineBreak);
+            hours.style.marginTop = '2vh';
+            hours.style.marginLeft = '37vw';
         
             location.append(lineBreak);
             location.append(lineBreak);
@@ -105,6 +106,14 @@ console.log('home button module');
             location.style.marginLeft = '37vw';
         
             
+
+            function homeOpacity(){
+            
+                intro.style.opacity = '0';
+                hours.style.opacity = '0';
+                
+            }
+
             //-Apparently textContent cant be split up into
             //multiple lines...might have to try different
             //approach
@@ -112,7 +121,7 @@ console.log('home button module');
             //append them into the hours div? (It worked!)
            
             
-            mainDiv.append(homeBtn,lineBreak,this.intro,this.hours,location,bottomStyle);     
+            mainDiv.append(homeBtn,lineBreak,intro,hours,location,bottomStyle);     
             document.body.append(mainDiv);
             document.body.style.backgroundColor = 'green';
             document.body.style.marginLeft = 'auto';
@@ -120,16 +129,11 @@ console.log('home button module');
             document.body.style.fontSize = '2rem';
             
             
-        },
-
-        homeOpacity :function (){
-            
-            this.intro.style.opacity = '0';
-            this.hours.style.opacity = '0';
-            
         }
+
+         
         
-    };
+
 
     
 

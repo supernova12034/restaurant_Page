@@ -1,3 +1,4 @@
+console.log('page inttro');
 
 import pizza from './pizza.png';
 

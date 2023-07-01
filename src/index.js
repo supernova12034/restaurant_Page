@@ -1,13 +1,13 @@
 console.log('index module.');
 
 import {pageLoad} from './pageIntro';
-import {home} from './homeButton';
-import {menu} from './menuButton';
+import {createHomeButton} from './homeButton';
+import{createMenuButton} from './menuButton';
 
 pageLoad();
 
-// createHomeButton();
+ createHomeButton();
+ createMenuButton();
 
-menu.createMenuButton();  //experiment
 
 
