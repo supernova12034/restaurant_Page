@@ -1,26 +1,16 @@
-console.log('menu module');
-export {createMenuButton};
 
+export {menuObj};
 
+//replicate this style in homeButton.js as well.
 
+let menuObj = {
 
-
-    /*Bring the pizza neopolitan up and treated it as
-    a property, so you can access it from the other module to 
-    affect its opacity. */
-    
-     
-    function createMenuButton(){
-   
-                                    
+     createMenuButton(){                                 
         let menuButtonDiv = document.createElement('div');
         menuButtonDiv.style.marginTop = '-47vh';        
         menuButtonDiv.style.marginLeft = '47vw';
         
-        let menuBtn = document.createElement('button');
-        menuBtn.textContent = 'Menu';
-        menuBtn.style.height = '5vh';
-        menuBtn.style.width = '7vw';
+        
         
        let pizzaNeopalitan = document.createElement('div');
        let pizzaPatatosa = document.createElement('div');
@@ -33,28 +23,25 @@ export {createMenuButton};
         pizzaNeopalitan.innerHTML += 'produced by local farmers, with flavors that will remind you of naples!  <br />';
         pizzaNeopalitan.style.opacity = '0';
         /*we're here. Trying to put the menu onto the page,
-        set its opacity to 0, and then upon clicking the menu button, 
-        setting its opacity to 1.  (We're using innerHTML to put the 
-        text on several lines, since that doesnt work well with textContent.)
-        (It works!)
-        But in addition we also have to make the rest of the home content disappear
-        AND add the rest of the pizza's to the menu
-        
-        Have to make the pizza menu disappear once the home button is clicked.
+        set its opacity to 0
         */
         
-        
-        menuButtonDiv.append(menuBtn,pizzaNeopalitan); 
+        menuButtonDiv.append(pizzaNeopalitan); 
         document.body.append(menuButtonDiv);
+       
         
-        menuBtn.addEventListener('click',()=>{
-            pizzaNeopalitan.style.opacity = '1';
-            
-            home.homeOpacity();
-            
-        });
-        
+        },
+
+        insideMenu(){
+            console.log('This function is inside menu button function');
         }
+
+};
+
+
+    
+     
+    
         
 
 

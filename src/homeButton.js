@@ -1,10 +1,13 @@
-console.log('home button module');
-    export {createHomeButton}; 
+
+    export {homeObj}; 
     
+  
+
  /*So far so good */    
        
+    let homeObj = {
 
-         function createHomeButton(){
+         createHomeButton(){
 
             let hours = document.createElement('div');
 
@@ -44,25 +47,7 @@ console.log('home button module');
             let location3 = document.createElement('div');
             let location4 = document.createElement('div');
         
-            let homeBtn = document.createElement('button');
-            homeBtn.addEventListener('click',()=>{
-                intro.style.opacity = '1';
-                hours.style.opacity = '1';
-                menu.pizzaNeopalitan.style.opacity = '0';
-                                                    /* We're here...
-                                                    have to figure out the logic
-                                                    of this section...
-                                                    Upon clicking these buttons,
-                                                    one set of text should appear
-                                                    and the other disappear,
-                                                    HOWEVER, this should be done 
-                                                    WITHOUT circular dependencies...*/
-            });
-
-            homeBtn.textContent = 'Home';
-            homeBtn.style.marginLeft = '37vw';
-            homeBtn.style.height = '5vh'; 
-            homeBtn.style.width = '7vw';
+            
             
         
             intro.textContent = "At Bobby's pizza we use authentic recipes ";
@@ -107,12 +92,7 @@ console.log('home button module');
         
             
 
-            function homeOpacity(){
-            
-                intro.style.opacity = '0';
-                hours.style.opacity = '0';
-                
-            }
+           
 
             //-Apparently textContent cant be split up into
             //multiple lines...might have to try different
@@ -121,7 +101,7 @@ console.log('home button module');
             //append them into the hours div? (It worked!)
            
             
-            mainDiv.append(homeBtn,lineBreak,intro,hours,location,bottomStyle);     
+            mainDiv.append(lineBreak,intro,hours,location,bottomStyle);     
             document.body.append(mainDiv);
             document.body.style.backgroundColor = 'green';
             document.body.style.marginLeft = 'auto';
@@ -129,7 +109,14 @@ console.log('home button module');
             document.body.style.fontSize = '2rem';
             
             
+        },
+         insideHome(){
+            console.log('This function is inside home button function');
         }
+
+    };
+
+        
 
          
         
