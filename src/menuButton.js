@@ -4,36 +4,39 @@ export {menuObj};
 //replicate this style in homeButton.js as well.
 
 let menuObj = {
-
+     menuButtonDiv:document.createElement('div'),
+     pizzaNeopalitan:document.createElement('div'), 
+     
      createMenuButton(){                                 
-        let menuButtonDiv = document.createElement('div');
-        menuButtonDiv.style.marginTop = '-47vh';        
-        menuButtonDiv.style.marginLeft = '47vw';
+        
+        this.menuButtonDiv.style.marginTop = '-47vh';        
+        this.menuButtonDiv.style.marginLeft = '47vw';
         
         
         
-       let pizzaNeopalitan = document.createElement('div');
+       
        let pizzaPatatosa = document.createElement('div');
        let pizzaScicilian = document.createElement('div');
        let pizzaMelanzane = document.createElement('div');
 
         
-        pizzaNeopalitan.innerHTML += 'Our Signature Neopolitan pizza is made with quality, <br />';
-        pizzaNeopalitan.innerHTML += 'buffalo mozarella cheese, and san marzano tomatoes, toped with fresh basil,  <br />';
-        pizzaNeopalitan.innerHTML += 'produced by local farmers, with flavors that will remind you of naples!  <br />';
-        pizzaNeopalitan.style.opacity = '0';
+        this.pizzaNeopalitan.innerHTML += 'Our Signature Neopolitan pizza is made with quality, <br />';
+        this.pizzaNeopalitan.innerHTML += 'buffalo mozarella cheese, and san marzano tomatoes, toped with fresh basil,  <br />';
+        this.pizzaNeopalitan.innerHTML += 'produced by local farmers, with flavors that will remind you of naples!  <br />';
+       this.pizzaNeopalitan.style.opacity = '0';
         /*we're here. Trying to put the menu onto the page,
         set its opacity to 0
         */
         
-        menuButtonDiv.append(pizzaNeopalitan); 
-        document.body.append(menuButtonDiv);
+        this.menuButtonDiv.append(this.pizzaNeopalitan); 
+        document.body.append(this.menuButtonDiv);
        
         
         },
 
-        insideMenu(){
+        menuAppear(){
             console.log('This function is inside menu button function');
+            
         }
 
 };

@@ -6,7 +6,8 @@
  /*So far so good */    
        
     let homeObj = {
-
+        mainDiv: document.createElement('div'),
+        intro: document.createElement('div') ,
          createHomeButton(){
 
             let hours = document.createElement('div');
@@ -19,16 +20,16 @@
             bottomStyle.style.paddingTop = '2vh';
                
             
-            let mainDiv= document.createElement('div');
-            mainDiv.style.marginTop = '7vh';
-            mainDiv.style.backgroundColor = 'white';
-            mainDiv.style.height = '36.5vh';
-            mainDiv.style.width = '100vw';
-            mainDiv.style.paddingBottom = '10.5vh';
+             
+            this.mainDiv.style.marginTop = '7vh';
+            this.mainDiv.style.backgroundColor = 'white';
+            this.mainDiv.style.height = '36.5vh';
+            this.mainDiv.style.width = '100vw';
+            this.mainDiv.style.paddingBottom = '10.5vh';
             
             
            
-            let intro= document.createElement('div');
+            
             let intro2 = document.createElement('div');
             let intro3 = document.createElement('div');
         
@@ -50,14 +51,14 @@
             
             
         
-            intro.textContent = "At Bobby's pizza we use authentic recipes ";
-            intro.append(lineBreak);
+            this.intro.textContent = "At Bobby's pizza we use authentic recipes ";
+            this.intro.append(lineBreak);
             intro2.textContent = 'and fresh ingredients to create the meltiest,';
-            intro.append(intro2);
-            intro.append(lineBreak);
+            this.intro.append(intro2);
+            this.intro.append(lineBreak);
             intro3.textContent = ' tastiest, handcrafted pizza possible, for you!';
-            intro.append(intro3);
-            intro.style.marginLeft = '37vw';
+            this.intro.append(intro3);
+            this.intro.style.marginLeft = '37vw';
             
             
         
@@ -101,8 +102,8 @@
             //append them into the hours div? (It worked!)
            
             
-            mainDiv.append(lineBreak,intro,hours,location,bottomStyle);     
-            document.body.append(mainDiv);
+            this.mainDiv.append(lineBreak,this.intro,hours,location,bottomStyle);     
+            document.body.append(this.mainDiv);
             document.body.style.backgroundColor = 'green';
             document.body.style.marginLeft = 'auto';
             document.body.style.fontFamily = 'cursive','Consolas','Lucida Sans Typewriter';
@@ -110,9 +111,21 @@
             
             
         },
-         insideHome(){
+        //One method for disappearing content
+        /*The method for disappearing content MUST be in the index.js
+        file, since the index.js file can access every module via importing,
+         and these modules should NOT import any other modules*/
+
+        //And another method for appearing content? 
+        //And then calling the methods in the index file.
+        //Remember no circular dependencies. No importing into this module.
+         homeAppear(){
+            //We're here.
+            
+            
             console.log('This function is inside home button function');
-        }
+        },
+
 
     };
 

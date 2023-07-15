@@ -9,35 +9,18 @@ import{menuObj} from './menuButton';
 pageLoad();
 
 homeObj.createHomeButton();
-
  menuObj.createMenuButton();
 
  let buttonDiv = document.createElement('div');
-
  let homeBtn = document.createElement('button');
+
+
  homeBtn.addEventListener('click',()=>{
 
-    homeObj.insideHome();
     
-   
-     
-   
-                                         /* We're here...
-                                         have to figure out the logic
-                                         of this section...
-                                         Upon clicking these buttons,
-                                         one set of text should appear
-                                         and the other disappear,
-                                         HOWEVER, this should be done 
-                                         WITHOUT circular dependencies...
-                                         
-                                         Should this code be in index.js?
-                                         since it imports everything
-                                         (Try this...
-                                             Maybe we should create the 
-                                             buttons themselves in index.js
-                                             as well?)
-                                         */
+    homeObj.homeAppear();
+    menuObj.pizzaNeopalitan.style.opacity = '0'; //
+                                        
  });
 
  homeBtn.textContent = 'Home';
@@ -57,8 +40,9 @@ menuBtn.style.width = '7vw';
 
 menuBtn.addEventListener('click',()=>{
     
-    menuObj.insideMenu();
-    
+    menuObj.menuAppear();
+    homeObj.intro.style.opacity = '0'; //Fixed, it works!
+
 });
 
 buttonDiv.style.position = 'relative';
