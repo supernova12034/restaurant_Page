@@ -8,9 +8,10 @@
     let homeObj = {
         mainDiv: document.createElement('div'),
         intro: document.createElement('div') ,
+        hours:document.createElement('div'),
          createHomeButton(){
 
-            let hours = document.createElement('div');
+        
 
             let bottomStyle = document.createElement('div');
             bottomStyle.style.height = '33vh';
@@ -70,9 +71,9 @@
             day6.textContent = 'Saturday 12pm-11pm';
             day7.textContent = 'Sunday 12pm-11pm';
         
-            hours.append(lineBreak,lineBreak,day1,lineBreak,day2,lineBreak,day3,lineBreak,day4,lineBreak,day5,lineBreak,day6,lineBreak,day7,lineBreak);
-            hours.style.marginTop = '2vh';
-            hours.style.marginLeft = '37vw';
+            this.hours.append(lineBreak,lineBreak,day1,lineBreak,day2,lineBreak,day3,lineBreak,day4,lineBreak,day5,lineBreak,day6,lineBreak,day7,lineBreak);
+            this.hours.style.marginTop = '2vh';
+            this.hours.style.marginLeft = '37vw';
         
             location.append(lineBreak);
             location.append(lineBreak);
@@ -102,7 +103,7 @@
             //append them into the hours div? (It worked!)
            
             
-            this.mainDiv.append(lineBreak,this.intro,hours,location,bottomStyle);     
+            this.mainDiv.append(lineBreak,this.intro,this.hours,location,bottomStyle);     
             document.body.append(this.mainDiv);
             document.body.style.backgroundColor = 'green';
             document.body.style.marginLeft = 'auto';
