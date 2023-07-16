@@ -42,8 +42,8 @@ menuBtn.addEventListener('click',()=>{
     
     menuObj.menuAppear();
     homeObj.intro.style.opacity = '0'; //Fixed, it works!
-    homeObj.hours.style.opacity = '0';
-
+    homeObj.hours.style.opacity = '0';  
+    homeObj.location.style.opacity = '0';
 });
 
 buttonDiv.style.position = 'relative';

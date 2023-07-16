@@ -8,7 +8,8 @@
     let homeObj = {
         mainDiv: document.createElement('div'),
         intro: document.createElement('div') ,
-        hours:document.createElement('div'),
+        hours:document.createElement('div'), //we're here.
+        location:document.createElement('div'),
          createHomeButton(){
 
         
@@ -44,7 +45,7 @@
             let day7 = document.createElement('div');
             let lineBreak = document.createElement('br');
             
-            let location = document.createElement('div');
+            
             let location2 = document.createElement('div');
             let location3 = document.createElement('div');
             let location4 = document.createElement('div');
@@ -75,22 +76,22 @@
             this.hours.style.marginTop = '2vh';
             this.hours.style.marginLeft = '37vw';
         
-            location.append(lineBreak);
-            location.append(lineBreak);
-            location.textContent = 'We are conviniently located ';
+            this.location.append(lineBreak);
+            this.location.append(lineBreak);
+            this.location.textContent = 'We are conviniently located ';
         
-            location.append(lineBreak);
+            this.location.append(lineBreak);
             location2.textContent = 'at platform 9 3/4,';
-            location.append(location2);
-            location.append(lineBreak);
+            this.location.append(location2);
+            this.location.append(lineBreak);
             location3.textContent = 'at 1 Kings Cross Street, ';
-            location.append(location3);
-            location.append(lineBreak);
+            this.location.append(location3);
+            this.location.append(lineBreak);
             location4.textContent = 'London, UK. Testing testing';
-            location.append(location4);
+            this.location.append(location4);
             
-            location.style.marginTop = '2vh';
-            location.style.marginLeft = '37vw';
+            this.location.style.marginTop = '2vh';
+            this.location.style.marginLeft = '37vw';
         
             
 
@@ -103,7 +104,7 @@
             //append them into the hours div? (It worked!)
            
             
-            this.mainDiv.append(lineBreak,this.intro,this.hours,location,bottomStyle);     
+            this.mainDiv.append(lineBreak,this.intro,this.hours,this.location,bottomStyle);     
             document.body.append(this.mainDiv);
             document.body.style.backgroundColor = 'green';
             document.body.style.marginLeft = 'auto';
