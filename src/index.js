@@ -19,7 +19,12 @@ homeObj.createHomeButton();
 
     
     homeObj.homeAppear();
-    menuObj.pizzaNeopalitan.style.opacity = '0'; //
+    menuObj.pizzaNeopalitan.style.opacity = '0';
+    //homeBtn makes the menu stuff disappear.
+
+    /* We're here! It works,
+    now just gotta figure out what to do next...maybe add more content to home 
+    and menu?? */
                                         
  });
 
@@ -44,6 +49,7 @@ menuBtn.addEventListener('click',()=>{
     homeObj.intro.style.opacity = '0'; //Fixed, it works!
     homeObj.hours.style.opacity = '0';  
     homeObj.location.style.opacity = '0';
+    //menuBtn makes the home stuff disappear.
 });
 
 buttonDiv.style.position = 'relative';
@@ -51,11 +57,7 @@ buttonDiv.style.bottom = '12vh';
 
 buttonDiv.append(homeBtn,menuBtn); 
 
-/*It worked! Now just have to position the buttons  
-correctly and get the opacity functionality set up.
-Have to modify css position property in order to unfreeze buttons!
 
-*/
 
 document.body.append(buttonDiv);
  

@@ -123,7 +123,9 @@
         //Remember no circular dependencies. No importing into this module.
          homeAppear(){
             //We're here.
-            
+             this.intro.style.opacity = '1'; //Fixed, it works!
+             this.hours.style.opacity = '1';  
+             this.location.style.opacity = '1';
             
             console.log('This function is inside home button function');
         },
