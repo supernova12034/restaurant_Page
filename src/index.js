@@ -3,6 +3,7 @@
 import {pageLoad} from './pageIntro';
 import {homeObj} from './homeButton';
 import{menuObj} from './menuButton';
+import { contactObj } from './contactButton';
 
 
 
@@ -20,11 +21,13 @@ homeObj.createHomeButton();
     
     homeObj.homeAppear();
     menuObj.pizzaNeopalitan.style.opacity = '0';
+    menuObj.pizzaPatatosa.style.opacity = '0';
+    menuObj.pizzaScicilian.style.opacity = '0';
+    menuObj.pizzaMelanzane.style.opacity = '0';
     //homeBtn makes the menu stuff disappear.
 
     /* We're here! It works,
-    now just gotta figure out what to do next...maybe add more content to home 
-    and menu?? */
+    now just gotta add more content to menu?? */
                                         
  });
 

@@ -6,26 +6,33 @@ export {menuObj};
 let menuObj = {
      menuButtonDiv:document.createElement('div'),
      pizzaNeopalitan:document.createElement('div'), 
+     pizzaPatatosa:document.createElement('div'),
+     pizzaScicilian:document.createElement('div'),
+     pizzaMelanzane:document.createElement('div'),
 
      createMenuButton(){                                 
         
         this.menuButtonDiv.style.marginTop = '-47vh';        
         this.menuButtonDiv.style.marginLeft = '47vw';
         
-        
-        
-       
-       let pizzaPatatosa = document.createElement('div');
-       let pizzaScicilian = document.createElement('div');
-       let pizzaMelanzane = document.createElement('div');
-
-        
         this.pizzaNeopalitan.innerHTML += 'Our Signature Neopolitan pizza is made with quality, <br />';
         this.pizzaNeopalitan.innerHTML += 'buffalo mozarella cheese, and san marzano tomatoes, toped with fresh basil,  <br />';
         this.pizzaNeopalitan.innerHTML += 'produced by local farmers, with flavors that will remind you of naples!  <br />';
-        this.pizzaNeopalitan.style.opacity = '0'; //experiment
+        this.pizzaNeopalitan.style.opacity = '0'; 
+
+        //we're here, what should we do next?? (Contact page?)
+        this.pizzaPatatosa.innerHTML += '<br> Our Potato pizza uses quality homegrown potatoes from PEI, <br />';
+        this.pizzaPatatosa.innerHTML += 'extra virgin olive oil, topped with sea salt';
+        this.pizzaPatatosa.style.opacity = '0';
+
+        this.pizzaScicilian.innerHTML += '<br> Our Scicilian pizza is made of specially prepared spongey dough </br> ';
+        this.pizzaScicilian.innerHTML += 'covered with savory sauce, breadcrumbs and goats cheese';
+        this.pizzaScicilian.style.opacity = '0';
+
+        this.pizzaMelanzane.innerHTML += '<br> Our pizza melanzane is prepared with our fresh dough, tomato sauce </br>';
+        this.pizzaMelanzane.innerHTML += 'slices of fried eggplant, and topped with mozarella cheese';
         
-        this.menuButtonDiv.append(this.pizzaNeopalitan); 
+        this.menuButtonDiv.append(this.pizzaNeopalitan,this.pizzaPatatosa,this.pizzaScicilian,this.pizzaMelanzane); 
         document.body.append(this.menuButtonDiv);
        
         
@@ -34,6 +41,10 @@ let menuObj = {
         menuAppear(){
             console.log('This function is inside menu button function');
             this.pizzaNeopalitan.style.opacity = '1';
+            this.pizzaPatatosa.style.opacity = '1';
+            this.pizzaScicilian.style.opacity = '1';
+            this.pizzaMelanzane.style.opacity = '1';
+
         }
 
 };
