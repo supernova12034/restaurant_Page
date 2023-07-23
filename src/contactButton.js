@@ -14,12 +14,12 @@ chef:document.createElement('div'),
         this.owner.innerHTML += 'many of the dishes are inspired by the creations of his grandma </br>';
         this.owner.style.opacity = '0';
 
-        this.manager.innerHTML += 'The manager of our establishment is stacey </br>';
+        this.manager.innerHTML += '<br>The manager of our establishment is stacey </br>';
         this.manager.innerHTML += 'who has extensive experience in the food and beverage industry </br>';
         this.manager.innerHTML += 'both as an employee and management </br>';
         this.manager.style.opacity = '0';
 
-        this.chef.innerHTML += 'Our esteemed chef giovanni and the owner mark are lifelong friends, </br> ';
+        this.chef.innerHTML += '<br>Our esteemed chef giovanni and the owner mark are lifelong friends, </br> ';
         this.chef.innerHTML += 'who grew up toghether, they both share passion for food, </br>';
         this.chef.innerHTML += 'gio went to culinary school, and was trained by elite chefs in italy. </br>';
         this.chef.innerHTML += 'He too posesses extensive experience in the culinary industry, </br>';
@@ -27,7 +27,9 @@ chef:document.createElement('div'),
         this.chef.style.opacity = '0';
 
         this.contactDiv.append(this.owner,this.manager,this.chef);   //We're here...
-        
+        this.contactDiv.style.position = 'relative';
+        this.contactDiv.style.left ='30vw';
+        this.contactDiv.style.bottom = '45vh';
         document.body.append(this.contactDiv);
         
     },
