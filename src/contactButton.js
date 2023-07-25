@@ -26,7 +26,7 @@ chef:document.createElement('div'),
         this.chef.innerHTML += 'and is pleased to share his passion and cooking with you!';
         this.chef.style.opacity = '0';
 
-        this.contactDiv.append(this.owner,this.manager,this.chef);   //We're here...
+        this.contactDiv.append(this.owner,this.manager,this.chef);   
         this.contactDiv.style.position = 'relative';
         this.contactDiv.style.left ='30vw';
         this.contactDiv.style.bottom = '45vh';
@@ -40,6 +40,3 @@ chef:document.createElement('div'),
     }
 
 };
-/* We're here, have to adjust positioning of content, 
-as well as space it out a bit better.
-*/

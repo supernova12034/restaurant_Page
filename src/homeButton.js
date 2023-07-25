@@ -3,12 +3,12 @@
     
   
 
- /*So far so good */    
+ 
        
     let homeObj = {
         mainDiv: document.createElement('div'),
         intro: document.createElement('div') ,
-        hours:document.createElement('div'), //we're here.
+        hours:document.createElement('div'), 
         location:document.createElement('div'),
          createHomeButton(){
 
