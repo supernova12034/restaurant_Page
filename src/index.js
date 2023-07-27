@@ -59,8 +59,7 @@ menuBtn.addEventListener('click',()=>{
     contactObj.chef.style.opacity = '0';
 });
 
-buttonDiv.style.position = 'relative';
-buttonDiv.style.bottom = '12vh';
+
 
 //---------------------------
 //We're here.
@@ -85,7 +84,7 @@ contactButton.addEventListener('click',()=>{
 });
 
 buttonDiv.style.position = 'relative';
-buttonDiv.style.bottom = '98vh';
+buttonDiv.style.bottom = '145vh'; 
 buttonDiv.append(homeBtn,menuBtn,contactButton); 
 
 
