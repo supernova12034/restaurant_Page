@@ -1,7 +1,7 @@
 
 export {menuObj};
 
-//replicate this style in homeButton.js as well.
+// button position has to be fixed
 
 let menuObj = {
      menuButtonDiv:document.createElement('div'),
@@ -12,15 +12,18 @@ let menuObj = {
 
      createMenuButton(){                                 
         
-        this.menuButtonDiv.style.marginTop = '-47vh';        
-        this.menuButtonDiv.style.marginLeft = '47vw';
+        this.menuButtonDiv.style.position = 'relative';
+
+        //THIS AFFECTS THE TEXT, NOT THE BUTTONS APPARENTLY.
+        this.menuButtonDiv.style.bottom = '43vh';
+        this.menuButtonDiv.style.left = '30vw';
         
         this.pizzaNeopalitan.innerHTML += 'Our Signature Neopolitan pizza is made with quality, <br />';
         this.pizzaNeopalitan.innerHTML += 'buffalo mozarella cheese, and san marzano tomatoes, toped with fresh basil,  <br />';
         this.pizzaNeopalitan.innerHTML += 'produced by local farmers, with flavors that will remind you of naples!  <br />';
         this.pizzaNeopalitan.style.opacity = '0'; 
 
-        //we're here, what should we do next?? (Contact page?)
+        
         this.pizzaPatatosa.innerHTML += '<br> Our Potato pizza uses quality homegrown potatoes from PEI, <br />';
         this.pizzaPatatosa.innerHTML += 'extra virgin olive oil, topped with sea salt';
         this.pizzaPatatosa.style.opacity = '0';

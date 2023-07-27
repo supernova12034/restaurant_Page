@@ -86,7 +86,7 @@ contactButton.addEventListener('click',()=>{
 
 buttonDiv.style.position = 'relative';
 buttonDiv.style.bottom = '98vh';
-buttonDiv.append(homeBtn,menuBtn,contactButton); //We're here, have to adjust the positioning of this.
+buttonDiv.append(homeBtn,menuBtn,contactButton); 
 
 
 
