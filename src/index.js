@@ -5,7 +5,8 @@ import {homeObj} from './homeButton';
 import{menuObj} from './menuButton';
 import { contactObj } from './contactButton';
 
-
+/*Almost done tweaking, have to try to get all the text to be left
+aligned the same way vertically. */
 
 pageLoad();
 

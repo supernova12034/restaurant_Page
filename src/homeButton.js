@@ -1,7 +1,7 @@
 
     export {homeObj}; 
     
-  
+  /*Getting close, gotta fix the big empty unnecesary green space below. */
 
  
        
@@ -15,20 +15,22 @@
         
 
             let bottomStyle = document.createElement('div');
-            bottomStyle.style.height = '33vh';
-            bottomStyle.style.width = '100vw';
+            bottomStyle.style.height = '35vh';
+            bottomStyle.style.width = '120vw';
             bottomStyle.style.backgroundColor = 'red';
-            bottomStyle.style.marginTop = '-17vh'; 
-            bottomStyle.style.paddingTop = '2vh';
+            bottomStyle.style.marginTop = '-16vh'; 
+            bottomStyle.style.paddingTop = '5vh';
                
             
              
             this.mainDiv.style.marginTop = '7vh';
             this.mainDiv.style.backgroundColor = 'white';
             this.mainDiv.style.height = '36.5vh';
-            this.mainDiv.style.width = '100vw';
+            this.mainDiv.style.width = '120vw';
             this.mainDiv.style.paddingBottom = '10.5vh';
-            
+            this.mainDiv.style.position = 'relative';
+            this.mainDiv.style.right = '7.5vw';
+            //experiment
             
            
             
@@ -61,6 +63,7 @@
             intro3.textContent = ' tastiest, handcrafted pizza possible, for you!';
             this.intro.append(intro3);
             this.intro.style.marginLeft = '37vw';
+            //tweaking this.
             
             
         
