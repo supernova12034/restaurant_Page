@@ -13,26 +13,24 @@
          createHomeButton(){
 
         
-
-            let bottomStyle = document.createElement('div');
-            bottomStyle.style.height = '35vh';
-            bottomStyle.style.width = '120vw';
-            bottomStyle.style.backgroundColor = 'red';
-            bottomStyle.style.marginTop = '-16vh'; 
-            bottomStyle.style.paddingTop = '5vh';
-               
-            
-             
-            this.mainDiv.style.marginTop = '7vh';
+                //Adjust the white or the red to fix green space. Green is non adjustable.
+                //we're here...trying to fix the green sitation...or reduce document height...
+            this.mainDiv.style.marginTop = '40vh';       
             this.mainDiv.style.backgroundColor = 'white';
-            this.mainDiv.style.height = '36.5vh';
+            this.mainDiv.style.height = '70vh'; //adjusting this works.
             this.mainDiv.style.width = '120vw';
             this.mainDiv.style.paddingBottom = '10.5vh';
             this.mainDiv.style.position = 'relative';
             this.mainDiv.style.right = '7.5vw';
-            //experiment
             
-           
+            
+            let bottomStyle = document.createElement('div');
+            bottomStyle.style.height = '100vh'; 
+            bottomStyle.style.width = '120vw';
+            bottomStyle.style.backgroundColor = 'red';
+            bottomStyle.style.marginTop = '35vh';  //experiment
+            bottomStyle.style.paddingTop = '5vh';
+            bottomStyle.style.position = 'relative';
             
             let intro2 = document.createElement('div');
             let intro3 = document.createElement('div');
@@ -109,10 +107,12 @@
             
             this.mainDiv.append(lineBreak,this.intro,this.hours,this.location,bottomStyle);     
             document.body.append(this.mainDiv);
-            document.body.style.backgroundColor = 'green';
+            document.body.style.backgroundColor = 'white';
             document.body.style.marginLeft = 'auto';
             document.body.style.fontFamily = 'cursive','Consolas','Lucida Sans Typewriter';
             document.body.style.fontSize = '2rem';
+            document.body.style.position = 'relative'; //experiment We're here..didnt work
+            document.body.style.height = '800px'; //experiment
             
             
         },

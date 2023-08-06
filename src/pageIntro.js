@@ -1,4 +1,5 @@
-
+/*Making good progress, 
+gotta move the center text up now. */
 
 import pizza from './pizza.png';
 
@@ -16,7 +17,10 @@ image1.style.height = '12vh';
 image1.style.width = '10vw';
 image1.style.marginLeft = '45vw';
 
+//div1.style.marginTop = '20vh';
+div1.style.paddingTop = '40vh';
 div1.style.backgroundColor = 'green';
+div1.style.height = '800px'; //experiment
 div1.append(image1,header1);
 
 }
