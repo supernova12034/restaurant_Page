@@ -15,7 +15,7 @@
         
                 //Adjust the white or the red to fix green space. Green is non adjustable.
                 //we're here...trying to fix the green sitation...or reduce document height...
-            this.mainDiv.style.marginTop = '40vh';       
+            this.mainDiv.style.marginTop = '3vh'; //We're here.      
             this.mainDiv.style.backgroundColor = 'white';
             this.mainDiv.style.height = '70vh'; //adjusting this works.
             this.mainDiv.style.width = '120vw';
