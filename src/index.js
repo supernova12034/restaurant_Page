@@ -85,7 +85,8 @@ contactButton.addEventListener('click',()=>{
 });
 
 buttonDiv.style.position = 'relative';
-buttonDiv.style.bottom = '145vh'; 
+buttonDiv.style.bottom = '180vh'; 
+buttonDiv.style.right = '5vw'; 
 buttonDiv.append(homeBtn,menuBtn,contactButton); 
 
 
