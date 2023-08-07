@@ -29,7 +29,7 @@ chef:document.createElement('div'),
         this.contactDiv.append(this.owner,this.manager,this.chef);   
         this.contactDiv.style.position = 'relative';
         this.contactDiv.style.left ='30vw';
-        this.contactDiv.style.bottom = '90vh';
+        this.contactDiv.style.bottom = '124vh'; 
         document.body.append(this.contactDiv);
         
     },
