@@ -1,5 +1,4 @@
-/*Making good progress, 
-gotta move the center text up now. */
+
 
 import pizza from './pizza.png';
 

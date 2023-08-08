@@ -34,6 +34,7 @@ let menuObj = {
 
         this.pizzaMelanzane.innerHTML += '<br> Our pizza melanzane is prepared with our fresh dough, tomato sauce </br>';
         this.pizzaMelanzane.innerHTML += 'slices of fried eggplant, and topped with mozarella cheese';
+        this.pizzaMelanzane.style.opacity = '0';
         
         this.menuButtonDiv.append(this.pizzaNeopalitan,this.pizzaPatatosa,this.pizzaScicilian,this.pizzaMelanzane); 
         document.body.append(this.menuButtonDiv);

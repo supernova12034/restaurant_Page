@@ -1,7 +1,7 @@
 
     export {homeObj}; 
     
-  /*Getting close, gotta fix the big empty unnecesary green space below. */
+  
 
  
        
