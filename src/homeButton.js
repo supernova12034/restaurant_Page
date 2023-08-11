@@ -20,14 +20,17 @@
             this.mainDiv.style.width = '120vw';
             this.mainDiv.style.paddingBottom = '10.5vh';
             this.mainDiv.style.position = 'relative';
-            this.mainDiv.style.right = '7.5vw';
-            
+            // this.mainDiv.style.right = '30vw'; //this doesnt seem to be working..
+            this.mainDiv.style.left = '-7vw'; 
+            this.mainDiv.style.top = '3.5vh';
+            /*All the paragraphs seem to be the same width...
+            now just have to tweak their positioning...*/
             
             let bottomStyle = document.createElement('div');
             bottomStyle.style.height = '100vh'; 
             bottomStyle.style.width = '120vw';
             bottomStyle.style.backgroundColor = 'red';
-            bottomStyle.style.marginTop = '35vh';  //experiment
+            bottomStyle.style.marginTop = '35vh';  
             bottomStyle.style.paddingTop = '5vh';
             bottomStyle.style.position = 'relative';
             
@@ -42,7 +45,7 @@
             let day5 = document.createElement('div');
             let day6 = document.createElement('div');
             let day7 = document.createElement('div');
-            let lineBreak = document.createElement('br');
+            
             
             
             let location2 = document.createElement('div');
@@ -52,43 +55,37 @@
             
             
         
-            this.intro.textContent = "At Bobby's pizza we use authentic recipes ";
-            this.intro.append(lineBreak);
-            intro2.textContent = 'and fresh ingredients to create the meltiest,';
-            this.intro.append(intro2);
-            this.intro.append(lineBreak);
-            intro3.textContent = ' tastiest, handcrafted pizza possible, for you!';
+            this.intro.innerHTML = "At Bobby's pizza we use authentic recipes , and fresh ingredients </br>";
+            
+            intro3.innerHTML = 'to create the meltiest tastiest, handcrafted pizza possible, for you! </br>';
             this.intro.append(intro3);
             this.intro.style.marginLeft = '37vw';
             //tweaking this.
             
             
         
-            day1.textContent = 'Monday: Closed ';
-            day2.textContent = 'Tuesday: 12pm-9pm';
-            day3.textContent = 'Wednesday: 12pm-9pm';
-            day4.textContent = 'Thursday 12pm-9pm';
-            day5.textContent = 'Friday 12pm-11pm';
-            day6.textContent = 'Saturday 12pm-11pm';
-            day7.textContent = 'Sunday 12pm-11pm';
+            day1.innerHTML = 'Monday: Closed </br>';
+            day2.innerHTML = 'Tuesday: 12pm-9pm </br>';
+            day3.innerHTML = 'Wednesday: 12pm-9pm </br>';
+            day4.innerHTML = 'Thursday 12pm-9pm </br>';
+            day5.innerHTML = 'Friday 12pm-11pm </br>';
+            day6.innerHTML = 'Saturday 12pm-11pm </br>';
+            day7.innerHTML = 'Sunday 12pm-11pm </br>';
         
-            this.hours.append(lineBreak,lineBreak,day1,lineBreak,day2,lineBreak,day3,lineBreak,day4,lineBreak,day5,lineBreak,day6,lineBreak,day7,lineBreak);
+            this.hours.append(day1,day2,day3,day4,day5,day6,day7);
             this.hours.style.marginTop = '2vh';
             this.hours.style.marginLeft = '37vw';
         
-            this.location.append(lineBreak);
-            this.location.append(lineBreak);
-            this.location.textContent = 'We are conviniently located ';
+            
+            this.location.innerHTML = 'We are conviniently located, at platform 9 3/4,</br>';
         
-            this.location.append(lineBreak);
-            location2.textContent = 'at platform 9 3/4,';
-            this.location.append(location2);
-            this.location.append(lineBreak);
-            location3.textContent = 'at 1 Kings Cross Street, ';
+            
+            
+            
+            location3.innerHTML = 'at 1 Kings Cross Street, London, UK. Testing testing  </br>';
             this.location.append(location3);
-            this.location.append(lineBreak);
-            location4.textContent = 'London, UK. Testing testing';
-            this.location.append(location4);
+            
+            
             
             this.location.style.marginTop = '2vh';
             this.location.style.marginLeft = '37vw';
@@ -97,14 +94,14 @@
 
            
 
-            //-Apparently textContent cant be split up into
+            //-Apparently innerHTML cant be split up into
             //multiple lines...might have to try different
             //approach
             //-Might have to create elements for each line/day and
             //append them into the hours div? (It worked!)
            
             
-            this.mainDiv.append(lineBreak,this.intro,this.hours,this.location,bottomStyle);     
+            this.mainDiv.append(this.intro,this.hours,this.location,bottomStyle);     
             document.body.append(this.mainDiv);
             document.body.style.backgroundColor = 'white';
             document.body.style.marginLeft = 'auto';

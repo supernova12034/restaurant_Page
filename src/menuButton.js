@@ -1,7 +1,7 @@
 
 export {menuObj};
 
-// button position has to be fixed
+/*Move text and buttons a little to the right */
 
 let menuObj = {
      menuButtonDiv:document.createElement('div'),
