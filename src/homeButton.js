@@ -20,17 +20,15 @@
             this.mainDiv.style.width = '120vw';
             this.mainDiv.style.paddingBottom = '10.5vh';
             this.mainDiv.style.position = 'relative';
-            // this.mainDiv.style.right = '30vw'; //this doesnt seem to be working..
             this.mainDiv.style.left = '-7vw'; 
-            this.mainDiv.style.top = '3.5vh';
-            /*All the paragraphs seem to be the same width...
-            now just have to tweak their positioning...*/
+            this.mainDiv.style.top = '20vh';
+           
             
             let bottomStyle = document.createElement('div');
             bottomStyle.style.height = '100vh'; 
             bottomStyle.style.width = '120vw';
             bottomStyle.style.backgroundColor = 'red';
-            bottomStyle.style.marginTop = '35vh';  
+            bottomStyle.style.marginTop = '19vh';  
             bottomStyle.style.paddingTop = '5vh';
             bottomStyle.style.position = 'relative';
             

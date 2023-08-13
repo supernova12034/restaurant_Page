@@ -15,7 +15,7 @@ let menuObj = {
         this.menuButtonDiv.style.position = 'relative';
 
         //THIS AFFECTS THE TEXT, NOT THE BUTTONS APPARENTLY.
-        this.menuButtonDiv.style.bottom = '77vh'; 
+        this.menuButtonDiv.style.bottom = '60vh'; 
         this.menuButtonDiv.style.left = '30vw';
         
         this.pizzaNeopalitan.innerHTML += 'Our Signature Neopolitan pizza is made with quality, <br />';
